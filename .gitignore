@@ -1,0 +1,8 @@
+node_modules/
+dist/
+site/
+coverage/
+*.tgz
+repopulse-*.html
+repopulse-*.svg
+.noxaplus-repopulse/
