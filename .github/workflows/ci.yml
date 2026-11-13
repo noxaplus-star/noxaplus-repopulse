@@ -19,7 +19,7 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: node dist/cli.js audit --demo --out demo-report.html --badge demo-badge.svg
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: demo-report
           path: |
