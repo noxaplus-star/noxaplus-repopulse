@@ -1,4 +1,5 @@
 import type { AuditResult, CheckResult, CheckStatus } from './types.js';
+import { emblemDark, emblemLight } from './emblem.js';
 
 const STATUS_LABEL: Record<CheckStatus, string> = { pass: 'Pass', warn: 'Partial', fail: 'Missing' };
 
@@ -74,7 +75,10 @@ body{background:var(--bg);color:var(--text);font:15px/1.6 "Inter",ui-sans-serif,
 .wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:28px 22px 60px}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:26px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:700;letter-spacing:.02em}
-.brand .mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#04101f;font-size:15px;font-weight:900}
+.brand img.emblem{height:32px;width:auto;display:block;flex:none}
+.brand img.emblem-dark{display:none}
+[data-theme="light"] .brand img.emblem-light{display:none}
+[data-theme="light"] .brand img.emblem-dark{display:block}
 .brand small{color:var(--muted);font-weight:500}
 .ghost{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:10px;padding:8px 13px;font:inherit;font-size:13px;cursor:pointer}
 .ghost:hover{color:var(--text);border-color:rgba(110,231,255,.4)}
@@ -149,7 +153,7 @@ footer a:hover{color:var(--accent)}
 <div class="ambient"></div>
 <div class="wrap">
   <header class="topbar">
-    <a class="brand" href="https://github.com/noxaplus-star/noxaplus-repopulse"><span class="mark">R</span>RepoPulse <small>by NoxaPlus</small></a>
+    <a class="brand" href="https://github.com/noxaplus-star/noxaplus-repopulse"><img class="emblem emblem-light" src="${emblemLight}" alt="NoxaPlus"/><img class="emblem emblem-dark" src="${emblemDark}" alt=""/>RepoPulse <small>by NoxaPlus</small></a>
     <button class="ghost" id="theme" type="button">Switch theme</button>
   </header>
 

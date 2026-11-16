@@ -2,6 +2,12 @@
 
 Notable changes to NoxaPlus RepoPulse are recorded here. Version numbers follow Semantic Versioning. Dates use `YYYY-MM-DD`.
 
+## [1.0.1] - 2026-11-16
+
+### Changed
+
+- The HTML report header now uses the original NoxaPlus emblem, with light and dark variants that follow the report theme.
+
 ## [1.0.0] - 2026-11-13
 
 ### Added

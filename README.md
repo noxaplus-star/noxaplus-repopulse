@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/brand.png" alt="NoxaPlus" width="520"></p>
+
 # NoxaPlus RepoPulse
 
 **Know whether your repository is actually ready to be found, trusted, and maintained — in one command.**

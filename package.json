@@ -1,6 +1,6 @@
 {
   "name": "noxaplus-repopulse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audit GitHub repository health with a 0-100 score, an actionable HTML report, and a shareable badge. Built by NoxaPlus.",
   "keywords": [
     "github",
